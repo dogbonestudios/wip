@@ -1,13 +1,30 @@
-    uses: kinglittleq/markdown-latex-math-render@v0.1
-    with:
-        markdown-files: md_files/*.md  # or md_files/README.md
-        output-dir: .
+- name: Cache
+  uses: actions/cache@v5.1.0
+  with:
+    # A list of files, directories, and wildcard patterns to cache and restore
+    path: 
+    # An explicit key for restoring and saving the cache
+    key: 
+    # An ordered multiline string listing the prefix-matched keys, that are used for restoring stale cache if no cache hit occurred for key. Note `cache-hit` returns false in this case.
+    restore-keys: # optional
+    # The chunk size used to split up large files during upload, in bytes
+    upload-chunk-size: # optional
+    # An optional boolean when enabled, allows windows runners to save or restore caches that can be restored or saved respectively on other platforms
+    enableCrossOsArchive: # optional, default is false
+    # Fail the workflow if cache entry is not found
+    fail-on-cache-miss: # optional, default is false
+    # Check if a cache entry exists for the given input(s) (key, restore-keys) without downloading the cache
+    lookup-only: # optional, default is false
+    # Run the post step to save the cache even if another step before fails
+    save-always: # optional, default is false\
 
-    # commit changes and push
-    - name: Commit
-    run: |
-        git config --global user.name 'Github Action Bot'
-        git config --global user.email 'bot@example.com'
-        git add *.md
-        git commit -m 'Render latex formulas'
-        git push origin || echo "No changes to commit"
+
+- name: Multi-output Example Action
+  # You may pin to the exact commit or the version.
+  # uses: Ompragash/maths-action@ce21f97ec3f77908d100f117062df204d5cd2555
+  uses: Ompragash/maths-action@v1.0.0
+  with:
+    # First input value
+    input1: # default is 10
+    # Second input value
+    input2: # default is 20
