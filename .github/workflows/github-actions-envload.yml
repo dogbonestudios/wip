@@ -1,0 +1,17 @@
+- name: loadenv-action
+  # You may pin to the exact commit or the version.
+  # uses: akefirad/loadenv-action@289e560bd6ee6e5d6c660495567350f43700ec9b
+  uses: akefirad/loadenv-action@v0.0.1
+  with:
+    # .env files (default is ".env"), currently only one file is supported
+    files: # default is .env
+    # whether to export variables in the loaded file as environment variables
+    export-vars: # default is true
+    # whether to exapnd variables in the loaded file
+    expand-vars: # default is true
+    # whether to ignore host runner environment variables while expanding variables
+    ignore-host-env: # default is true
+    # additional variables (JSON object) to be used while expanding variables
+    additional-vars: # default is {}
+    # whether to throw an error if a variable is not found while expanding variables
+    strict: # default is true

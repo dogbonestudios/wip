@@ -1,6 +1,0 @@
-- name: Frogo-Loading-Indicator-View
-  # You may pin to the exact commit or the version.
-  # uses: frogobox/frogo-loading-indicator-view@5f3f281cfa93814473778f5ef78157d5b1d05883
-  uses: frogobox/frogo-loading-indicator-view@0.0.1-beta01
-  with:
-    # Input to use
