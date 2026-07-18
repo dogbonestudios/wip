@@ -1,0 +1,25 @@
+- name: Image Actions
+  # You may pin to the exact commit or the version.
+  # uses: calibreapp/image-actions@9d037c06280028c110ff61c433ad4dc7d33c3c43
+  uses: calibreapp/image-actions@1.5.0
+  with:
+    # The token that the action will use to create and update the pull request.
+    GITHUB_TOKEN: # optional, default is ${{ github.token }}
+    # JPEG quality level
+    jpegQuality: # optional, default is 85
+    # Use progressive (interlaced) scan for JPEG
+    jpegProgressive: # optional, default is false
+    # PNG quality level
+    pngQuality: # optional, default is 80
+    # WEBP quality level
+    webpQuality: # optional, default is 85
+    # AVIF quality level
+    avifQuality: # optional, default is 75
+    # Paths to ignore during search
+    ignorePaths: # optional, default is node_modules/**
+    # Images will be compressed. No commit, or comments will be added to your Pull Request
+    compressOnly: # optional, default is false
+    # Minimun bytes reduction to be committed
+    minAbsChange: # optional, default is 1024
+    # Minimun percentage reduction to be committed
+    minPctChange: # optional, default is 5
