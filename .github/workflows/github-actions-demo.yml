@@ -16,7 +16,7 @@
     # Check if a cache entry exists for the given input(s) (key, restore-keys) without downloading the cache
     lookup-only: # optional, default is false
     # Run the post step to save the cache even if another step before fails
-    save-always: # optional, default is false\
+    save-always: # optional, default is false
 
 
 - name: Multi-output Example Action
