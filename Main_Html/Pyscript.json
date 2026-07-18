@@ -1,0 +1,7 @@
+
+{
+    "packages": ["arrr", "numberwang", "snowballstemmer>=2.2.0" ]
+}
+{
+    "interpreter": "https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.mjs"
+}
