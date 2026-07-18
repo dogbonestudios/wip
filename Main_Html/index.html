@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+        <!--  CSS -->
+  <link rel="stylesheet" href="mystyle.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- PyScript CSS -->
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css">
+        <!-- This script tag bootstraps PyScript -->
+  <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+        <!-- this is a way to automatically bootstrap polyscript -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/polyscript"></script>
+</head>
+<body>
+        <!--
+            Run some Python code with the MicroPython interpreter, but without
+            the extra benefits provided by PyScript.
+        -->
+   <script type="micropython">
+            from js import document
+            document.body.textContent = 'polyscript'
+        </script>
+</body>
+</html>
