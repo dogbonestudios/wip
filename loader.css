@@ -1,5 +1,5 @@
 #preloader {
-  background: #000 url(Bunnysmash.webp);
+  background: #000 url('https://static.wikia.nocookie.net/animaljam/images/2/29/Bunnysmash.png');
   height: 100vh;
   width : 100%;
   position: fixed;
